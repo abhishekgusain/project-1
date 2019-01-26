@@ -1,0 +1,283 @@
+
+.container
+{
+    width:300px;
+    height:300px ;
+    position:absolute;
+    top:120%;
+    left:18%;
+    transform: translate(-50%,-50%);
+    background: transparent;
+    border: 10px solid transparent;
+    padding:10px ;
+    box-shadow: border-box ;
+    transition:-5%;
+    box-shadow: none;
+    
+    
+    
+}
+.shape
+{
+    background:#fff;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    transform: rotate(45deg)scale(1.2);
+    border:10px solid #00f5a7;
+    border-radius: 50%;
+    transition: .5s;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+    
+    
+}
+.shape p
+{
+    margin 0;
+    padding-top:68px;
+    padding-right:16px;
+    text-align: center;
+    box-sizing: border-box;
+    transform:rotate(-45deg) translate(-25px,-22px);
+    font-size: 12px;
+    
+    
+    
+}
+.container:before
+{
+   content:'';
+    position: absolute;
+    width:24px;
+    height:90%;
+    background:#00ad76;
+    left: 50px;
+    top:5%;
+    transition: .5%;
+    opacity: 1;
+    animation-delay: .3s;
+    z-index: -1;
+    
+     
+}
+.container:after
+{
+   content:'';
+    position: absolute;
+    width:24px;
+    height:90%;
+    background:#00ad76;
+    right: 50px;
+    top:5%;
+    transition: .5%;
+    opacity: 0;
+    animation-delay: 2s;
+    z-index: -1;
+    
+     
+}
+.container:hover:before
+{
+    left:-54px;
+    opacity:1;
+    
+}
+.container:hover:after
+{
+    right:-54px;
+    opacity:1;
+    
+}
+.container:hover .shape
+{
+    border-radius:0; 
+}
+.container:hover
+{
+  background: #fff;
+    
+}
+#particles.js
+{
+    position:relative;
+    height:100%;
+}
+.center
+{
+    position:absolute;
+    top:25%;
+    left:3%;
+}
+.box
+{
+    width:420px;
+    height:340px;
+    padding:35px;
+    z-index: 1;
+    background:transparent;
+    overflow:hidden;
+    border :10px solid #00f5a7;
+    transition:0.5s;
+    
+}
+.box h1{
+    margin:0px;
+    padding:14px;
+    font-size: 34px;
+    transition:.5s;    
+    
+}
+.box p
+{
+    transition:.4s;
+    
+}
+.box:before
+{
+    content:'';
+    position: absolute;
+    top:0%;
+    left:0%;
+    width:0;
+    height: 0;
+background:#42da56;
+    z-index:-1;
+    border-radius: 5px;
+    transition: .5s;
+    
+}
+
+.box:hover:before
+    {
+        width:100%;
+        height:100%;
+        
+    }
+.box:hover h1,.box:hover p
+{
+    color:#fff;
+    
+}
+.box:hover
+{
+    border: 10px solid #fff;
+    box-shadow:0 20px 15px rgba(0,0,0,.4);
+    
+}
+.timeline
+{
+    width:700px;
+    height:auto;
+    margin-left:560px;
+    margin-top:130px;
+    box-sizing: border-box;
+    
+}
+.timeline li 
+{
+    
+position: relative;
+    list-style: none;
+    
+}
+.timeline li .item
+{
+    position: relative;
+    min-height: 60px;
+   
+    padding:0 20px 20px 30px;
+    margin-left:1px solid #262626;
+    
+}
+.timeline li:last-child .item
+{
+    border-left: 1px solid transparent;
+    
+}
+.timeline li .item span
+{
+    position:absolute;
+    top:19px;
+    left:-9px;
+    width:40px;
+    line-height:40px;
+    text-align: center;
+    background:#262626;
+    color:#fff;
+    border-radius: 50%;
+    
+    
+}
+.timeline li .item h1,
+.timeline li .item p
+
+{
+margin:10px ;
+    padding :10px ;
+    
+    
+}
+footer{
+	bottom: 0;
+}
+.footer-basic-centered{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+	padding: 45px;
+	margin-top: 80px;
+}
+
+.footer-basic-centered .footer-company-motto{
+	color:  #8d9093;
+	font-size: 24px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links{
+	list-style: none;
+	font-weight: bold;
+	color:  #ffffff;
+	padding: 35px 0 23px;
+	margin: 0;
+}
+
+.footer-basic-centered .footer-links a{
+	display:inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+
+@media (max-width: 600px) {
+
+	.footer-basic-centered{
+		padding: 35px;
+	}
+
+	.footer-basic-centered .footer-company-motto{
+		font-size: 18px;
+	}
+
+	.footer-basic-centered .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-basic-centered .footer-links{
+		font-size: 14px;
+		padding: 25px 0 20px;
+	}
+
+	.footer-basic-centered .footer-links a{
+		line-height: 1.8;
+	}
+}

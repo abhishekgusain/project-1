@@ -1,0 +1,78 @@
+body{
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+nav{
+    position:relative;
+    color:rebeccapurple;
+    
+    
+}
+#logo_img{
+    width:45px;
+    height:60px;
+}
+
+
+.head_home{
+    margin-left:0px;
+    
+}
+.text_home{
+font-family: 'Cedarville Cursive', cursive;
+    font-size:15px;
+    margin-left:40px;
+    text-align:justify;
+}
+#section2img{
+padding-top:20px;
+    
+}
+.text_home:hover{
+    color:green;
+transform:scale(1);
+    transition-duration:500ms;
+    overflow: hidden;
+    
+}
+
+#video1{
+    padding-top:-25px;
+   
+    
+}
+.footer{
+    background-color:black;
+color:white;
+}
+
+.login_pages{
+    margin-top:300px;
+    
+}
+
+
+                                    /*html and css3 style */
+
+.loginpage1{
+    margin-top:200px;
+    border-radius:50%;
+    border:1px solid black;
+    width:200px;
+    height:200px;
+    overflow: hidden;
+    position: absolute;
+    
+    
+}
+h2{
+    position:absolute;
+    
+}
+
+
+
+                               /*aboutme*/
+N
